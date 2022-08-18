@@ -1,38 +1,141 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+  overflow: hidden;
+  background: url('https://www.digiseller.ru/preview/1063038/p1_3335912_7d9d0746.jpg');
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+button {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  height: 40px;
+}
+.healthBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  border: 1px solid black;
+  height: 20px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.health {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-weight: 500;
+  transition: all 2s ease-in-out;
+}
+.App .mainBlock {
+  width: 45%;
+  height: 100%;
+}
+.App .heroesBlock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  padding: 10% 0;
+}
+.App .monsterBlock {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  padding: 10% 0;
+}
+.centerBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 10%;
+}
+.App .info {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+.shots {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 2%;
+  justify-content: space-between;
+}
+.shots div {
+  width: 35%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.punchTitle {
+  display: inline-block;
+  height: 10%;
+  font-size: 18px;
+  font-weight: 500;
+}
+.shots div p {
+  margin: 0;
+}
+.monster {
+  display: block;
+  margin-left: calc(100% - 250px);
+  width: 250px;
+  height: 300px;
+}
+.shots .active {
+  border: 2px solid red;
+}
+.shots .magShotActive {
+  border: 2px solid blue;
+}
+.App .punches {
+  display: flex;
+  width: 100%;
+  height: 80%;
+  margin: 5% 0;
+  align-items: center;
+  justify-content: center;
+}
+.punches p {
+  display: flex;
+  width: 30%;
+  height: 50px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.shots p img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.replica {
+  display: block;
+  width: 60%;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  font-size: 20px;
+  font-weight: 500;
+}
+.monsterBlock .replica {
+  left: 0;
+}
+.heroes {
+  display: block;
+  margin-right: calc(100% - 200px);
+  width: 200px;
+  height: 300px;
 }
